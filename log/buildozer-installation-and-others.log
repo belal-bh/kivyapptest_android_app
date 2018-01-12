@@ -1,0 +1,1190 @@
+belal@belal-ubuntu-16:~/Desktop/pytest$ cd ../
+belal@belal-ubuntu-16:~/Desktop$ cd ../
+belal@belal-ubuntu-16:~$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+belal@belal-ubuntu-16:~$ git clone https://github.com/kivy/buildozer.git
+The program 'git' is currently not installed. You can install it by typing:
+sudo apt install git
+belal@belal-ubuntu-16:~$ sudu apt install git
+No command 'sudu' found, did you mean:
+ Command 'sudo' from package 'sudo' (main)
+ Command 'sudo' from package 'sudo-ldap' (universe)
+ Command 'tudu' from package 'tudu' (universe)
+sudu: command not found
+belal@belal-ubuntu-16:~$ sudo apt install git
+[sudo] password for belal: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 276 not upgraded.
+Need to get 3,857 kB of archives.
+After this operation, 25.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 liberror-perl all 0.17-1.2 [19.6 kB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 git-man all 1:2.7.4-0ubuntu1.3 [736 kB]
+Get:3 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 git amd64 1:2.7.4-0ubuntu1.3 [3,102 kB]
+Fetched 3,857 kB in 3min 19s (19.3 kB/s)                                       
+Selecting previously unselected package liberror-perl.
+(Reading database ... 177613 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.2_all.deb ...
+Unpacking liberror-perl (0.17-1.2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.7.4-0ubuntu1.3_all.deb ...
+Unpacking git-man (1:2.7.4-0ubuntu1.3) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.7.4-0ubuntu1.3_amd64.deb ...
+Unpacking git (1:2.7.4-0ubuntu1.3) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up liberror-perl (0.17-1.2) ...
+Setting up git-man (1:2.7.4-0ubuntu1.3) ...
+Setting up git (1:2.7.4-0ubuntu1.3) ...
+belal@belal-ubuntu-16:~$ git clone https://github.com/kivy/buildozer.git
+Cloning into 'buildozer'...
+remote: Counting objects: 2722, done.
+remote: Total 2722 (delta 0), reused 0 (delta 0), pack-reused 2722
+Receiving objects: 100% (2722/2722), 909.45 KiB | 8.00 KiB/s, done.
+Resolving deltas: 100% (1674/1674), done.
+Checking connectivity... done.
+belal@belal-ubuntu-16:~$ dir
+buildozer  Documents  examples.desktop	Pictures  Templates
+Desktop    Downloads  Music		Public	  Videos
+belal@belal-ubuntu-16:~$ cd buildozer
+belal@belal-ubuntu-16:~/buildozer$ python setup.py build
+Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    from setuptools import setup
+ImportError: No module named setuptools
+belal@belal-ubuntu-16:~/buildozer$ python setup.py build
+Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    from setuptools import setup
+ImportError: No module named setuptools
+belal@belal-ubuntu-16:~/buildozer$ python3 setup.py build
+Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    from setuptools import setup
+belal@belal-ubuntu-16:~/buildozer$ git clone https://github.com/kivy/buildozer
+fatal: destination path 'buildozer' already exists and is not an empty directory.
+belal@belal-ubuntu-16:~/buildozer$ cd ../
+belal@belal-ubuntu-16:~$ git clone https://github.com/kivy/buildozer
+fatal: destination path 'buildozer' already exists and is not an empty directory.
+belal@belal-ubuntu-16:~$ git clone https://github.com/kivy/buildozer
+Cloning into 'buildozer'...
+remote: Counting objects: 2722, done.
+remote: Total 2722 (delta 0), reused 0 (delta 0), pack-reused 2722
+Receiving objects: 100% (2722/2722), 909.45 KiB | 25.00 KiB/s, done.
+Resolving deltas: 100% (1674/1674), done.
+Checking connectivity... done.
+belal@belal-ubuntu-16:~$ cd buildozer
+belal@belal-ubuntu-16:~/buildozer$ python setup.py build
+Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    from setuptools import setup
+ImportError: No module named setuptools
+belal@belal-ubuntu-16:~/buildozer$ apt-get install -y python-setuptools
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+belal@belal-ubuntu-16:~/buildozer$ cd ../
+belal@belal-ubuntu-16:~$ apt-get install -y python-setuptools
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+belal@belal-ubuntu-16:~$ apt-get install python-setuptools
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+belal@belal-ubuntu-16:~$ sudo apt-get install -y python-setuptools
+[sudo] password for belal: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  python-setuptools-doc
+The following NEW packages will be installed:
+  python-setuptools
+0 upgraded, 1 newly installed, 0 to remove and 276 not upgraded.
+Need to get 169 kB of archives.
+After this operation, 530 kB of additional disk space will be used.
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 python-setuptools all 20.7.0-1 [169 kB]
+Fetched 169 kB in 33s (5,042 B/s)                       
+Selecting previously unselected package python-setuptools.
+(Reading database ... 178428 files and directories currently installed.)
+Preparing to unpack .../python-setuptools_20.7.0-1_all.deb ...
+Unpacking python-setuptools (20.7.0-1) ...
+Setting up python-setuptools (20.7.0-1) ...
+belal@belal-ubuntu-16:~$ cd buildozer
+belal@belal-ubuntu-16:~/buildozer$ python setup.py build
+/usr/lib/python2.7/dist-packages/setuptools/dist.py:285: UserWarning: Normalizing '0.35dev' to '0.35.dev0'
+  normalized_version,
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/buildozer
+copying buildozer/target.py -> build/lib.linux-x86_64-2.7/buildozer
+copying buildozer/jsonstore.py -> build/lib.linux-x86_64-2.7/buildozer
+copying buildozer/__main__.py -> build/lib.linux-x86_64-2.7/buildozer
+copying buildozer/__init__.py -> build/lib.linux-x86_64-2.7/buildozer
+copying buildozer/sitecustomize.py -> build/lib.linux-x86_64-2.7/buildozer
+creating build/lib.linux-x86_64-2.7/buildozer/targets
+copying buildozer/targets/__init__.py -> build/lib.linux-x86_64-2.7/buildozer/targets
+copying buildozer/targets/osx.py -> build/lib.linux-x86_64-2.7/buildozer/targets
+copying buildozer/targets/android_new.py -> build/lib.linux-x86_64-2.7/buildozer/targets
+copying buildozer/targets/ios.py -> build/lib.linux-x86_64-2.7/buildozer/targets
+copying buildozer/targets/android.py -> build/lib.linux-x86_64-2.7/buildozer/targets
+creating build/lib.linux-x86_64-2.7/buildozer/libs
+copying buildozer/libs/__init__.py -> build/lib.linux-x86_64-2.7/buildozer/libs
+copying buildozer/libs/version.py -> build/lib.linux-x86_64-2.7/buildozer/libs
+copying buildozer/libs/_structures.py -> build/lib.linux-x86_64-2.7/buildozer/libs
+creating build/lib.linux-x86_64-2.7/buildozer/scripts
+copying buildozer/scripts/__init__.py -> build/lib.linux-x86_64-2.7/buildozer/scripts
+copying buildozer/scripts/remote.py -> build/lib.linux-x86_64-2.7/buildozer/scripts
+copying buildozer/scripts/client.py -> build/lib.linux-x86_64-2.7/buildozer/scripts
+running egg_info
+creating buildozer.egg-info
+writing requirements to buildozer.egg-info/requires.txt
+writing buildozer.egg-info/PKG-INFO
+writing top-level names to buildozer.egg-info/top_level.txt
+writing dependency_links to buildozer.egg-info/dependency_links.txt
+writing entry points to buildozer.egg-info/entry_points.txt
+writing manifest file 'buildozer.egg-info/SOURCES.txt'
+reading manifest file 'buildozer.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*COPYING'
+writing manifest file 'buildozer.egg-info/SOURCES.txt'
+copying buildozer/default.spec -> build/lib.linux-x86_64-2.7/buildozer
+belal@belal-ubuntu-16:~/buildozer$ sudo pip install -e
+sudo: pip: command not found
+belal@belal-ubuntu-16:~/buildozer$ sudo pip install -e .
+sudo: pip: command not found
+belal@belal-ubuntu-16:~/buildozer$ cd ../
+belal@belal-ubuntu-16:~$ sudo apt-get install python3-setuptools
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  python-setuptools-doc
+The following NEW packages will be installed:
+  python3-setuptools
+0 upgraded, 1 newly installed, 0 to remove and 276 not upgraded.
+Need to get 88.0 kB of archives.
+After this operation, 439 kB of additional disk space will be used.
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 python3-setuptools all 20.7.0-1 [88.0 kB]
+Fetched 88.0 kB in 13s (6,649 B/s)                                                
+Selecting previously unselected package python3-setuptools.
+(Reading database ... 178496 files and directories currently installed.)
+Preparing to unpack .../python3-setuptools_20.7.0-1_all.deb ...
+Unpacking python3-setuptools (20.7.0-1) ...
+Setting up python3-setuptools (20.7.0-1) ...
+belal@belal-ubuntu-16:~$ sudo easy_install3 pip
+Searching for pip
+Reading https://pypi.python.org/simple/pip/
+Best match: pip 9.0.1
+Downloading https://pypi.python.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz#md5=35f01da33009719497f01a4ba69d63c9
+Processing pip-9.0.1.tar.gz
+Writing /tmp/easy_install-tuawgwkf/pip-9.0.1/setup.cfg
+Running pip-9.0.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-tuawgwkf/pip-9.0.1/egg-dist-tmp-jhqrejdh
+/usr/lib/python3.5/distutils/dist.py:261: UserWarning: Unknown distribution option: 'python_requires'
+  warnings.warn(msg)
+warning: no previously-included files found matching '.coveragerc'
+warning: no previously-included files found matching '.mailmap'
+warning: no previously-included files found matching '.travis.yml'
+warning: no previously-included files found matching '.landscape.yml'
+warning: no previously-included files found matching 'pip/_vendor/Makefile'
+warning: no previously-included files found matching 'tox.ini'
+warning: no previously-included files found matching 'dev-requirements.txt'
+warning: no previously-included files found matching 'appveyor.yml'
+no previously-included directories found matching '.github'
+no previously-included directories found matching '.travis'
+no previously-included directories found matching 'docs/_build'
+no previously-included directories found matching 'contrib'
+no previously-included directories found matching 'tasks'
+no previously-included directories found matching 'tests'
+creating /usr/local/lib/python3.5/dist-packages/pip-9.0.1-py3.5.egg
+Extracting pip-9.0.1-py3.5.egg to /usr/local/lib/python3.5/dist-packages
+Adding pip 9.0.1 to easy-install.pth file
+Installing pip3 script to /usr/local/bin
+Installing pip3.5 script to /usr/local/bin
+Installing pip script to /usr/local/bin
+
+Installed /usr/local/lib/python3.5/dist-packages/pip-9.0.1-py3.5.egg
+Processing dependencies for pip
+Finished processing dependencies for pip
+belal@belal-ubuntu-16:~$ python setup.py build
+python: can't open file 'setup.py': [Errno 2] No such file or directory
+belal@belal-ubuntu-16:~$ cd buildozer
+belal@belal-ubuntu-16:~/buildozer$ python setup.py build
+/usr/lib/python2.7/dist-packages/setuptools/dist.py:285: UserWarning: Normalizing '0.35dev' to '0.35.dev0'
+  normalized_version,
+running build
+running build_py
+running egg_info
+writing requirements to buildozer.egg-info/requires.txt
+writing buildozer.egg-info/PKG-INFO
+writing top-level names to buildozer.egg-info/top_level.txt
+writing dependency_links to buildozer.egg-info/dependency_links.txt
+writing entry points to buildozer.egg-info/entry_points.txt
+reading manifest file 'buildozer.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*COPYING'
+writing manifest file 'buildozer.egg-info/SOURCES.txt'
+belal@belal-ubuntu-16:~/buildozer$ sudo pip install -e
+
+Usage:   
+  pip install [options] <requirement specifier> [package-index-options] ...
+  pip install [options] -r <requirements file> [package-index-options] ...
+  pip install [options] [-e] <vcs project url> ...
+  pip install [options] [-e] <local project path> ...
+  pip install [options] <archive url/path> ...
+
+-e option requires 1 argument
+belal@belal-ubuntu-16:~/buildozer$ sudo pip install -e .
+The directory '/home/belal/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/belal/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Obtaining file:///home/belal/buildozer
+Requirement already satisfied: pexpect in /usr/lib/python3/dist-packages (from buildozer==0.35.dev0)
+Collecting virtualenv (from buildozer==0.35.dev0)
+  Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB)
+    100% |████████████████████████████████| 1.8MB 37kB/s 
+Installing collected packages: virtualenv, buildozer
+  Running setup.py develop for buildozer
+Successfully installed buildozer virtualenv-15.1.0
+belal@belal-ubuntu-16:~/buildozer$ dir
+build	   buildozer.egg-info  crystax-ndk-10.3.2  LICENSE	README.rst
+buildozer  CHANGELOG.md        docs		   MANIFEST.in	setup.py
+belal@belal-ubuntu-16:~/buildozer$ cd crystax-ndk-10.3.2
+belal@belal-ubuntu-16:~/buildozer/crystax-ndk-10.3.2$ buildozer init
+File buildozer.spec created, ready to customize!
+belal@belal-ubuntu-16:~/buildozer/crystax-ndk-10.3.2$ cd ../../
+belal@belal-ubuntu-16:~$ cd Desktop/app
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer init
+File buildozer.spec created, ready to customize!
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Preparing build
+# Check requirements for android
+# Check configuration tokens
+# zlib headers must be installed, run: sudo apt-get install zlib1g-dev
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get install zlib1g-dev
+[sudo] password for belal: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  zlib1g-dev
+0 upgraded, 1 newly installed, 0 to remove and 155 not upgraded.
+Need to get 168 kB of archives.
+After this operation, 425 kB of additional disk space will be used.
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev amd64 1:1.2.8.dfsg-2ubuntu4.1 [168 kB]
+Fetched 168 kB in 3s (44.7 kB/s)                        
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 213674 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.1) ...
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+# Cython (cython) not found, please install it.
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get install  cython3
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libexpat1-dev libpython3-dev libpython3.5-dev python3-dev python3.5-dev
+Suggested packages:
+  cython-doc
+The following NEW packages will be installed:
+  cython3 libexpat1-dev libpython3-dev libpython3.5-dev python3-dev python3.5-dev
+0 upgraded, 6 newly installed, 0 to remove and 155 not upgraded.
+Need to get 39.4 MB of archives.
+After this operation, 62.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial/universe amd64 cython3 amd64 0.23.4-0ubuntu5 [1,540 kB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1-dev amd64 2.1.0-7ubuntu0.16.04.3 [115 kB]
+Get:3 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython3.5-dev amd64 3.5.2-2ubuntu0~16.04.4 [37.3 MB]
+Get:4 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libpython3-dev amd64 3.5.1-3 [6,926 B]
+Get:5 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python3.5-dev amd64 3.5.2-2ubuntu0~16.04.4 [413 kB]
+Get:6 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 python3-dev amd64 3.5.1-3 [1,186 B]
+Fetched 39.4 MB in 12min 23s (53.0 kB/s)                                          
+Selecting previously unselected package cython3.
+(Reading database ... 213702 files and directories currently installed.)
+Preparing to unpack .../cython3_0.23.4-0ubuntu5_amd64.deb ...
+Unpacking cython3 (0.23.4-0ubuntu5) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../libexpat1-dev_2.1.0-7ubuntu0.16.04.3_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Selecting previously unselected package libpython3.5-dev:amd64.
+Preparing to unpack .../libpython3.5-dev_3.5.2-2ubuntu0~16.04.4_amd64.deb ...
+Unpacking libpython3.5-dev:amd64 (3.5.2-2ubuntu0~16.04.4) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../libpython3-dev_3.5.1-3_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.5.1-3) ...
+Selecting previously unselected package python3.5-dev.
+Preparing to unpack .../python3.5-dev_3.5.2-2ubuntu0~16.04.4_amd64.deb ...
+Unpacking python3.5-dev (3.5.2-2ubuntu0~16.04.4) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../python3-dev_3.5.1-3_amd64.deb ...
+Unpacking python3-dev (3.5.1-3) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 1 added doc-base file...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up cython3 (0.23.4-0ubuntu5) ...
+Setting up libexpat1-dev:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Setting up libpython3.5-dev:amd64 (3.5.2-2ubuntu0~16.04.4) ...
+Setting up libpython3-dev:amd64 (3.5.1-3) ...
+Setting up python3.5-dev (3.5.2-2ubuntu0~16.04.4) ...
+Setting up python3-dev (3.5.1-3) ...
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+# Cython (cython) not found, please install it.
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get install  cython3
+[sudo] password for belal: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+cython3 is already the newest version (0.23.4-0ubuntu5).
+0 upgraded, 0 newly installed, 0 to remove and 155 not upgraded.
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+# Cython (cython) not found, please install it.
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get install build-essential
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+build-essential is already the newest version (12.1ubuntu2).
+0 upgraded, 0 newly installed, 0 to remove and 155 not upgraded.
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+# Cython (cython) not found, please install it.
+belal@belal-ubuntu-16:~/Desktop/app$ cd ../../
+belal@belal-ubuntu-16:~$ pip install Cython
+Requirement already satisfied: Cython in /usr/lib/python3/dist-packages
+belal@belal-ubuntu-16:~$ cd Desktop/app
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+# Cython (cython) not found, please install it.
+belal@belal-ubuntu-16:~/Desktop/app$ cython --virtion
+The program 'cython' is currently not installed. You can install it by typing:
+sudo apt install cython
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt install cython
+[sudo] password for belal: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpython-dev libpython2.7-dev python-dev python2.7-dev
+Suggested packages:
+  cython-doc
+The following NEW packages will be installed:
+  cython libpython-dev libpython2.7-dev python-dev python2.7-dev
+0 upgraded, 5 newly installed, 0 to remove and 155 not upgraded.
+Need to get 29.6 MB of archives.
+After this operation, 48.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Err:1 http://bd.archive.ubuntu.com/ubuntu xenial/universe amd64 cython amd64 0.23.4-0ubuntu5
+  Temporary failure resolving 'bd.archive.ubuntu.com'
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [27.8 MB]
+Get:3 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libpython-dev amd64 2.7.11-1 [7,728 B]
+Get:4 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-dev amd64 2.7.12-1ubuntu0~16.04.2 [276 kB]
+Get:5 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 python-dev amd64 2.7.11-1 [1,160 B]
+Fetched 27.9 MB in 13min 10s (35.3 kB/s)                                          
+E: Failed to fetch http://bd.archive.ubuntu.com/ubuntu/pool/universe/c/cython/cython_0.23.4-0ubuntu5_amd64.deb  Temporary failure resolving 'bd.archive.ubuntu.com'
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get update
+[sudo] password for belal: 
+Hit:1 http://ppa.launchpad.net/kivy-team/kivy/ubuntu xenial InRelease             
+Hit:2 http://bd.archive.ubuntu.com/ubuntu xenial InRelease                        
+Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:4 http://bd.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]       
+Get:5 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata [62.5 kB]
+Get:6 http://bd.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]     
+Get:7 http://security.ubuntu.com/ubuntu xenial-security/main DEP-11 64x64 Icons [57.6 kB]
+Get:8 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata [51.4 kB]
+Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe DEP-11 64x64 Icons [85.1 kB]
+Get:10 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 DEP-11 Metadata [307 kB]
+Get:11 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main DEP-11 64x64 Icons [221 kB]
+Get:12 http://bd.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [572 kB]
+Get:13 http://bd.archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [533 kB]
+Get:14 http://bd.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 DEP-11 Metadata [185 kB]
+Get:15 http://bd.archive.ubuntu.com/ubuntu xenial-updates/universe DEP-11 64x64 Icons [262 kB]
+Get:16 http://bd.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 DEP-11 Metadata [5,892 B]
+Get:17 http://bd.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata [3,324 B]
+Get:18 http://bd.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata [4,712 B]
+Fetched 2,657 kB in 45s (59.0 kB/s)                                               
+Reading package lists... Done
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt install cython
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpython-dev libpython2.7-dev python-dev python2.7-dev
+Suggested packages:
+  cython-doc
+The following NEW packages will be installed:
+  cython libpython-dev libpython2.7-dev python-dev python2.7-dev
+0 upgraded, 5 newly installed, 0 to remove and 155 not upgraded.
+Need to get 1,527 kB/29.6 MB of archives.
+After this operation, 48.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial/universe amd64 cython amd64 0.23.4-0ubuntu5 [1,527 kB]
+Fetched 1,527 kB in 25s (59.8 kB/s)                                               
+Selecting previously unselected package cython.
+(Reading database ... 214185 files and directories currently installed.)
+Preparing to unpack .../cython_0.23.4-0ubuntu5_amd64.deb ...
+Unpacking cython (0.23.4-0ubuntu5) ...
+Selecting previously unselected package libpython2.7-dev:amd64.
+Preparing to unpack .../libpython2.7-dev_2.7.12-1ubuntu0~16.04.2_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.12-1ubuntu0~16.04.2) ...
+Selecting previously unselected package libpython-dev:amd64.
+Preparing to unpack .../libpython-dev_2.7.11-1_amd64.deb ...
+Unpacking libpython-dev:amd64 (2.7.11-1) ...
+Selecting previously unselected package python2.7-dev.
+Preparing to unpack .../python2.7-dev_2.7.12-1ubuntu0~16.04.2_amd64.deb ...
+Unpacking python2.7-dev (2.7.12-1ubuntu0~16.04.2) ...
+Selecting previously unselected package python-dev.
+Preparing to unpack .../python-dev_2.7.11-1_amd64.deb ...
+Unpacking python-dev (2.7.11-1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up cython (0.23.4-0ubuntu5) ...
+Setting up libpython2.7-dev:amd64 (2.7.12-1ubuntu0~16.04.2) ...
+Setting up libpython-dev:amd64 (2.7.11-1) ...
+Setting up python2.7-dev (2.7.12-1ubuntu0~16.04.2) ...
+Setting up python-dev (2.7.11-1) ...
+belal@belal-ubuntu-16:~/Desktop/app$ cython --virtion
+Unknown compiler flag: --virtion
+belal@belal-ubuntu-16:~/Desktop/app$ cython --v
+Unknown compiler flag: --v
+belal@belal-ubuntu-16:~/Desktop/app$ cython -V
+Cython version 0.23.4
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/bin/cython
+# Search for Java compiler (javac)
+# Java compiler (javac) not found, please install it.
+belal@belal-ubuntu-16:~/Desktop/app$ javac -version
+The program 'javac' can be found in the following packages:
+ * default-jdk
+ * ecj
+ * gcj-5-jdk
+ * openjdk-8-jdk-headless
+ * gcj-4.8-jdk
+ * gcj-4.9-jdk
+ * openjdk-9-jdk-headless
+Try: sudo apt install <selected package>
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get update
+[sudo] password for belal: 
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]        
+Hit:2 http://bd.archive.ubuntu.com/ubuntu xenial InRelease                        
+Hit:3 http://ppa.launchpad.net/kivy-team/kivy/ubuntu xenial InRelease             
+Get:4 http://bd.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]       
+Get:5 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata [62.5 kB]
+Get:6 http://security.ubuntu.com/ubuntu xenial-security/main DEP-11 64x64 Icons [62.6 kB]
+Get:7 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata [51.4 kB]
+Get:8 http://bd.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]     
+Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe DEP-11 64x64 Icons [80.2 kB]
+Get:10 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 DEP-11 Metadata [307 kB]
+Get:11 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main DEP-11 64x64 Icons [215 kB]
+Get:12 http://bd.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 DEP-11 Metadata [185 kB]
+Get:13 http://bd.archive.ubuntu.com/ubuntu xenial-updates/universe DEP-11 64x64 Icons [269 kB]
+Get:14 http://bd.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 DEP-11 Metadata [5,892 B]
+Get:15 http://bd.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata [3,324 B]
+Get:16 http://bd.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata [4,716 B]
+Fetched 1,553 kB in 26s (58.4 kB/s)                                               
+Reading package lists... Done
+belal@belal-ubuntu-16:~/Desktop/app$ sudo apt-get install default-jdk
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates-java default-jdk-headless default-jre default-jre-headless
+  fonts-dejavu-extra java-common libgif7 libice-dev libpthread-stubs0-dev
+  libsm-dev libx11-dev libx11-doc libxau-dev libxcb1-dev libxdmcp-dev libxt-dev
+  openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless
+  x11proto-core-dev x11proto-input-dev x11proto-kb-dev xorg-sgml-doctools
+  xtrans-dev
+Suggested packages:
+  default-java-plugin libice-doc libsm-doc libxcb-doc libxt-doc openjdk-8-demo
+  openjdk-8-source visualvm icedtea-8-plugin fonts-ipafont-gothic
+  fonts-ipafont-mincho fonts-wqy-microhei fonts-wqy-zenhei fonts-indic
+The following NEW packages will be installed:
+  ca-certificates-java default-jdk default-jdk-headless default-jre
+  default-jre-headless fonts-dejavu-extra java-common libgif7 libice-dev
+  libpthread-stubs0-dev libsm-dev libx11-dev libx11-doc libxau-dev libxcb1-dev
+  libxdmcp-dev libxt-dev openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre
+  openjdk-8-jre-headless x11proto-core-dev x11proto-input-dev x11proto-kb-dev
+  xorg-sgml-doctools xtrans-dev
+0 upgraded, 26 newly installed, 0 to remove and 155 not upgraded.
+Need to get 40.9 MB of archives.
+After this operation, 165 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 java-common all 0.56ubuntu2 [7,742 B]
+Get:2 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openjdk-8-jre-headless amd64 8u151-b12-0ubuntu0.16.04.2 [27.0 MB]
+Get:3 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 default-jre-headless amd64 2:1.8-56ubuntu2 [4,380 B]
+Get:4 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ca-certificates-java all 20160321ubuntu1 [12.5 kB]
+Get:5 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgif7 amd64 5.1.4-0.3~16.04 [30.5 kB]
+Get:6 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openjdk-8-jre amd64 8u151-b12-0ubuntu0.16.04.2 [69.5 kB]
+Get:7 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 default-jre amd64 2:1.8-56ubuntu2 [980 B]
+Get:8 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openjdk-8-jdk-headless amd64 8u151-b12-0ubuntu0.16.04.2 [8,198 kB]
+Get:9 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 default-jdk-headless amd64 2:1.8-56ubuntu2 [986 B]
+Get:10 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openjdk-8-jdk amd64 8u151-b12-0ubuntu0.16.04.2 [451 kB]
+Get:11 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 default-jdk amd64 2:1.8-56ubuntu2 [968 B]
+Get:12 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 fonts-dejavu-extra all 2.35-1 [1,749 kB]
+Get:13 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 xorg-sgml-doctools all 1:1.11-1 [12.9 kB]
+Get:14 http://bd.archive.ubuntu.com/ubuntu xenial-updates/main amd64 x11proto-core-dev all 7.0.31-1~ubuntu16.04.2 [254 kB]
+Get:15 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libice-dev amd64 2:1.0.9-1 [44.9 kB]
+Get:16 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libpthread-stubs0-dev amd64 0.3-4 [4,068 B]
+Get:17 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libsm-dev amd64 2:1.2.2-1 [16.2 kB]
+Get:18 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libxau-dev amd64 1:1.0.8-1 [11.1 kB]
+Get:19 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libxdmcp-dev amd64 1:1.1.2-1.1 [25.1 kB]
+Get:20 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 x11proto-input-dev all 2.3.1-1 [118 kB]
+Get:21 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 x11proto-kb-dev all 1.0.7-0ubuntu1 [224 kB]
+Get:22 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 xtrans-dev all 1.3.5-1 [70.5 kB]
+Get:23 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libxcb1-dev amd64 1.11.1-1ubuntu1 [74.2 kB]
+Get:24 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libx11-dev amd64 2:1.6.3-1ubuntu2 [642 kB]
+Get:25 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libx11-doc all 2:1.6.3-1ubuntu2 [1,465 kB]
+Ign:25 http://bd.archive.ubuntu.com/ubuntu xenial/main i386 libx11-doc all 2:1.6.3-1ubuntu2
+Get:26 http://bd.archive.ubuntu.com/ubuntu xenial/main amd64 libxt-dev amd64 1:1.1.5-0ubuntu1 [394 kB]
+Get:25 http://bd.archive.ubuntu.com/ubuntu xenial/main i386 libx11-doc all 2:1.6.3-1ubuntu2 [1,465 kB]
+Fetched 40.9 MB in 11min 39s (58.4 kB/s)                                          
+Selecting previously unselected package java-common.
+(Reading database ... 214630 files and directories currently installed.)
+Preparing to unpack .../java-common_0.56ubuntu2_all.deb ...
+Unpacking java-common (0.56ubuntu2) ...
+Selecting previously unselected package openjdk-8-jre-headless:amd64.
+Preparing to unpack .../openjdk-8-jre-headless_8u151-b12-0ubuntu0.16.04.2_amd64.deb ...
+Unpacking openjdk-8-jre-headless:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+Selecting previously unselected package default-jre-headless.
+Preparing to unpack .../default-jre-headless_2%3a1.8-56ubuntu2_amd64.deb ...
+Unpacking default-jre-headless (2:1.8-56ubuntu2) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../ca-certificates-java_20160321ubuntu1_all.deb ...
+Unpacking ca-certificates-java (20160321ubuntu1) ...
+Selecting previously unselected package libgif7:amd64.
+Preparing to unpack .../libgif7_5.1.4-0.3~16.04_amd64.deb ...
+Unpacking libgif7:amd64 (5.1.4-0.3~16.04) ...
+Selecting previously unselected package openjdk-8-jre:amd64.
+Preparing to unpack .../openjdk-8-jre_8u151-b12-0ubuntu0.16.04.2_amd64.deb ...
+Unpacking openjdk-8-jre:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+Selecting previously unselected package default-jre.
+Preparing to unpack .../default-jre_2%3a1.8-56ubuntu2_amd64.deb ...
+Unpacking default-jre (2:1.8-56ubuntu2) ...
+Selecting previously unselected package openjdk-8-jdk-headless:amd64.
+Preparing to unpack .../openjdk-8-jdk-headless_8u151-b12-0ubuntu0.16.04.2_amd64.deb ...
+Unpacking openjdk-8-jdk-headless:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+Selecting previously unselected package default-jdk-headless.
+Preparing to unpack .../default-jdk-headless_2%3a1.8-56ubuntu2_amd64.deb ...
+Unpacking default-jdk-headless (2:1.8-56ubuntu2) ...
+Selecting previously unselected package openjdk-8-jdk:amd64.
+Preparing to unpack .../openjdk-8-jdk_8u151-b12-0ubuntu0.16.04.2_amd64.deb ...
+Unpacking openjdk-8-jdk:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+Selecting previously unselected package default-jdk.
+Preparing to unpack .../default-jdk_2%3a1.8-56ubuntu2_amd64.deb ...
+Unpacking default-jdk (2:1.8-56ubuntu2) ...
+Selecting previously unselected package fonts-dejavu-extra.
+Preparing to unpack .../fonts-dejavu-extra_2.35-1_all.deb ...
+Unpacking fonts-dejavu-extra (2.35-1) ...
+Selecting previously unselected package xorg-sgml-doctools.
+Preparing to unpack .../xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+Unpacking xorg-sgml-doctools (1:1.11-1) ...
+Selecting previously unselected package x11proto-core-dev.
+Preparing to unpack .../x11proto-core-dev_7.0.31-1~ubuntu16.04.2_all.deb ...
+Unpacking x11proto-core-dev (7.0.31-1~ubuntu16.04.2) ...
+Selecting previously unselected package libice-dev:amd64.
+Preparing to unpack .../libice-dev_2%3a1.0.9-1_amd64.deb ...
+Unpacking libice-dev:amd64 (2:1.0.9-1) ...
+Selecting previously unselected package libpthread-stubs0-dev:amd64.
+Preparing to unpack .../libpthread-stubs0-dev_0.3-4_amd64.deb ...
+Unpacking libpthread-stubs0-dev:amd64 (0.3-4) ...
+Selecting previously unselected package libsm-dev:amd64.
+Preparing to unpack .../libsm-dev_2%3a1.2.2-1_amd64.deb ...
+Unpacking libsm-dev:amd64 (2:1.2.2-1) ...
+Selecting previously unselected package libxau-dev:amd64.
+Preparing to unpack .../libxau-dev_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau-dev:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp-dev:amd64.
+Preparing to unpack .../libxdmcp-dev_1%3a1.1.2-1.1_amd64.deb ...
+Unpacking libxdmcp-dev:amd64 (1:1.1.2-1.1) ...
+Selecting previously unselected package x11proto-input-dev.
+Preparing to unpack .../x11proto-input-dev_2.3.1-1_all.deb ...
+Unpacking x11proto-input-dev (2.3.1-1) ...
+Selecting previously unselected package x11proto-kb-dev.
+Preparing to unpack .../x11proto-kb-dev_1.0.7-0ubuntu1_all.deb ...
+Unpacking x11proto-kb-dev (1.0.7-0ubuntu1) ...
+Selecting previously unselected package xtrans-dev.
+Preparing to unpack .../xtrans-dev_1.3.5-1_all.deb ...
+Unpacking xtrans-dev (1.3.5-1) ...
+Selecting previously unselected package libxcb1-dev:amd64.
+Preparing to unpack .../libxcb1-dev_1.11.1-1ubuntu1_amd64.deb ...
+Unpacking libxcb1-dev:amd64 (1.11.1-1ubuntu1) ...
+Selecting previously unselected package libx11-dev:amd64.
+Preparing to unpack .../libx11-dev_2%3a1.6.3-1ubuntu2_amd64.deb ...
+Unpacking libx11-dev:amd64 (2:1.6.3-1ubuntu2) ...
+Selecting previously unselected package libx11-doc.
+Preparing to unpack .../libx11-doc_2%3a1.6.3-1ubuntu2_all.deb ...
+Unpacking libx11-doc (2:1.6.3-1ubuntu2) ...
+Selecting previously unselected package libxt-dev:amd64.
+Preparing to unpack .../libxt-dev_1%3a1.1.5-0ubuntu1_amd64.deb ...
+Unpacking libxt-dev:amd64 (1:1.1.5-0ubuntu1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for ca-certificates (20170717~16.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.1) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20160824-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.15-0ubuntu1) ...
+Processing triggers for fontconfig (2.11.94-0ubuntu1.1) ...
+Setting up java-common (0.56ubuntu2) ...
+Setting up libgif7:amd64 (5.1.4-0.3~16.04) ...
+Setting up fonts-dejavu-extra (2.35-1) ...
+Setting up xorg-sgml-doctools (1:1.11-1) ...
+Setting up x11proto-core-dev (7.0.31-1~ubuntu16.04.2) ...
+Setting up libice-dev:amd64 (2:1.0.9-1) ...
+Setting up libpthread-stubs0-dev:amd64 (0.3-4) ...
+Setting up libsm-dev:amd64 (2:1.2.2-1) ...
+Setting up libxau-dev:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp-dev:amd64 (1:1.1.2-1.1) ...
+Setting up x11proto-input-dev (2.3.1-1) ...
+Setting up x11proto-kb-dev (1.0.7-0ubuntu1) ...
+Setting up xtrans-dev (1.3.5-1) ...
+Setting up libxcb1-dev:amd64 (1.11.1-1ubuntu1) ...
+Setting up libx11-dev:amd64 (2:1.6.3-1ubuntu2) ...
+Setting up libx11-doc (2:1.6.3-1ubuntu2) ...
+Setting up libxt-dev:amd64 (1:1.1.5-0ubuntu1) ...
+Setting up openjdk-8-jre-headless:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up default-jre-headless (2:1.8-56ubuntu2) ...
+Setting up openjdk-8-jre:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
+Setting up default-jre (2:1.8-56ubuntu2) ...
+Setting up openjdk-8-jdk-headless:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javah to provide /usr/bin/javah (javah) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+Setting up default-jdk-headless (2:1.8-56ubuntu2) ...
+Setting up openjdk-8-jdk:amd64 (8u151-b12-0ubuntu0.16.04.2) ...
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+Setting up default-jdk (2:1.8-56ubuntu2) ...
+Setting up ca-certificates-java (20160321ubuntu1) ...
+Adding debian:Taiwan_GRCA.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:Trustis_FPS_Root_CA.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:Deutsche_Telekom_Root_CA_2.pem
+Adding debian:GeoTrust_Universal_CA.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:Swisscom_Root_CA_2.pem
+Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:AddTrust_Low-Value_Services_Root.pem
+Adding debian:TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem
+Adding debian:AddTrust_Public_Services_Root.pem
+Adding debian:Sonera_Class_2_Root_CA.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:GeoTrust_Global_CA.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:CNNIC_ROOT.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:LuxTrust_Global_Root_2.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:ACEDICOM_Root.pem
+Adding debian:Security_Communication_EV_RootCA1.pem
+Adding debian:OpenTrust_Root_CA_G1.pem
+Adding debian:EC-ACC.pem
+Adding debian:AddTrust_External_Root.pem
+Adding debian:thawte_Primary_Root_CA_-_G2.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:Camerfirma_Global_Chambersign_Root.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:Certplus_Root_CA_G1.pem
+Adding debian:Certinomis_-_Autorité_Racine.pem
+Adding debian:CA_Disig_Root_R1.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
+Adding debian:OpenTrust_Root_CA_G2.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:Cybertrust_Global_Root.pem
+Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:QuoVadis_Root_CA.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:GlobalSign_Root_CA_-_R2.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:OpenTrust_Root_CA_G3.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:Comodo_Trusted_Services_root.pem
+Adding debian:Swisscom_Root_EV_CA_2.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:GeoTrust_Universal_CA_2.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+Adding debian:Certplus_Class_2_Primary_CA.pem
+Adding debian:thawte_Primary_Root_CA.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
+Adding debian:Swisscom_Root_CA_1.pem
+Adding debian:Comodo_Secure_Services_root.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
+Adding debian:DST_ACES_CA_X6.pem
+Adding debian:thawte_Primary_Root_CA_-_G3.pem
+Adding debian:GeoTrust_Primary_Certification_Authority.pem
+Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:AddTrust_Qualified_Certificates_Root.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:GeoTrust_Global_CA_2.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:ssl-cert-snakeoil.pem
+Adding debian:Certum_Root_CA.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:PSCProcert.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:Izenpe.com.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:DST_Root_CA_X3.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:Certinomis_-_Root_CA.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:Certplus_Root_CA_G2.pem
+Adding debian:Certigna.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:EE_Certification_Centre_Root_CA.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:Visa_eCommerce_Root.pem
+Adding debian:Global_Chambersign_Root_-_2008.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:Network_Solutions_Certificate_Authority.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+done.
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Processing triggers for ca-certificates (20170717~16.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+belal@belal-ubuntu-16:~/Desktop/app$ javac -version
+javac 1.8.0_151
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Run 'git clone -b stable --single-branch https://github.com/kivy/python-for-android.git python-for-android-new-toolchain'
+# Cwd /home/belal/Desktop/app/.buildozer/android/platform
+Cloning into 'python-for-android-new-toolchain'...
+# Run 'pip install -q --user "appdirs" "colorama>=0.3.3" "sh>=1.10,<1.12.5" "jinja2" "six"'
+# Cwd None
+# Android ANT is missing, downloading
+# Downloading http://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz
+# Run 'tar xzf apache-ant-1.9.4-bin.tar.gz'
+# Cwd /home/belal/.buildozer/android/platform
+# Apache ANT installation done.
+# Android SDK is missing, downloading
+# Downloading http://dl.google.com/android/android-sdk_r20-linux.tgz
+# Unpacking Android SDK
+# Run 'tar xzf android-sdk_r20-linux.tgz'
+# Cwd /home/belal/.buildozer/android/platform
+# Rename /home/belal/.buildozer/android/platform/android-sdk-linux to /home/belal/.buildozer/android/platform/android-sdk-20
+# Android SDK installation done.
+# Android NDK is missing, downloading
+# Downloading http://dl.google.com/android/ndk/android-ndk-r9c-linux-x86_64.tar.bz2
+Traceback (most recent call last):
+  File "/usr/local/bin/buildozer", line 9, in <module>
+    load_entry_point('buildozer', 'console_scripts', 'buildozer')()
+  File "/home/belal/buildozer/buildozer/scripts/client.py", line 13, in main
+    Buildozer().run_command(sys.argv[1:])
+  File "/home/belal/buildozer/buildozer/__init__.py", line 1058, in run_command
+    self.target.run_commands(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 92, in run_commands
+    func(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 102, in cmd_debug
+    self.buildozer.prepare_for_build()
+  File "/home/belal/buildozer/buildozer/__init__.py", line 176, in prepare_for_build
+    self.target.install_platform()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 469, in install_platform
+    self._install_android_ndk()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 312, in _install_android_ndk
+    cwd=self.buildozer.global_platform_dir)
+  File "/home/belal/buildozer/buildozer/__init__.py", line 686, in download
+    urlretrieve(url, filename, report_hook)
+  File "/usr/lib/python3.5/urllib/request.py", line 1777, in retrieve
+    % (read, size), result)
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 80276610 out of 371254928 bytes>
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Run 'pip install -q --user "appdirs" "colorama>=0.3.3" "sh>=1.10,<1.12.5" "jinja2" "six"'
+# Cwd None
+# Apache ANT found at /home/belal/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/belal/.buildozer/android/platform/android-sdk-20
+# Android NDK is missing, downloading
+# Downloading http://dl.google.com/android/ndk/android-ndk-r9c-linux-x86_64.tar.bz2
+^CTraceback (most recent call last):
+  File "/usr/local/bin/buildozer", line 9, in <module>
+    load_entry_point('buildozer', 'console_scripts', 'buildozer')()
+  File "/home/belal/buildozer/buildozer/scripts/client.py", line 13, in main
+    Buildozer().run_command(sys.argv[1:])
+  File "/home/belal/buildozer/buildozer/__init__.py", line 1058, in run_command
+    self.target.run_commands(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 92, in run_commands
+    func(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 102, in cmd_debug
+    self.buildozer.prepare_for_build()
+  File "/home/belal/buildozer/buildozer/__init__.py", line 176, in prepare_for_build
+    self.target.install_platform()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 469, in install_platform
+    self._install_android_ndk()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 312, in _install_android_ndk
+    cwd=self.buildozer.global_platform_dir)
+  File "/home/belal/buildozer/buildozer/__init__.py", line 686, in download
+    urlretrieve(url, filename, report_hook)
+  File "/usr/lib/python3.5/urllib/request.py", line 1760, in retrieve
+    block = fp.read(bs)
+  File "/usr/lib/python3.5/tempfile.py", line 622, in func_wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.5/http/client.py", line 448, in read
+    n = self.readinto(b)
+  File "/usr/lib/python3.5/http/client.py", line 488, in readinto
+    n = self.fp.readinto(b)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Run 'pip install -q --user "appdirs" "colorama>=0.3.3" "sh>=1.10,<1.12.5" "jinja2" "six"'
+# Cwd None
+# Apache ANT found at /home/belal/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/belal/.buildozer/android/platform/android-sdk-20
+# Android NDK is missing, downloading
+# Downloading http://dl.google.com/android/ndk/android-ndk-r9c-linux-x86_64.tar.bz2
+^CTraceback (most recent call last):
+  File "/usr/local/bin/buildozer", line 9, in <module>
+    load_entry_point('buildozer', 'console_scripts', 'buildozer')()
+  File "/home/belal/buildozer/buildozer/scripts/client.py", line 13, in main
+    Buildozer().run_command(sys.argv[1:])
+  File "/home/belal/buildozer/buildozer/__init__.py", line 1058, in run_command
+    self.target.run_commands(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 92, in run_commands
+    func(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 102, in cmd_debug
+    self.buildozer.prepare_for_build()
+  File "/home/belal/buildozer/buildozer/__init__.py", line 176, in prepare_for_build
+    self.target.install_platform()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 469, in install_platform
+    self._install_android_ndk()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 312, in _install_android_ndk
+    cwd=self.buildozer.global_platform_dir)
+  File "/home/belal/buildozer/buildozer/__init__.py", line 686, in download
+    urlretrieve(url, filename, report_hook)
+  File "/usr/lib/python3.5/urllib/request.py", line 1760, in retrieve
+    block = fp.read(bs)
+  File "/usr/lib/python3.5/tempfile.py", line 622, in func_wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.5/http/client.py", line 448, in read
+    n = self.readinto(b)
+  File "/usr/lib/python3.5/http/client.py", line 488, in readinto
+    n = self.fp.readinto(b)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+belal@belal-ubuntu-16:~/Desktop/app$ buildozer android debug deploy run
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+b"Debian 'dpkg' package management program version 1.18.4 (amd64).\nThis is free software; see the GNU General Public License version 2 or\nlater for copying conditions. There is NO warranty.\n"# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Run 'pip install -q --user "appdirs" "colorama>=0.3.3" "sh>=1.10,<1.12.5" "jinja2" "six"'
+# Cwd None
+# Apache ANT found at /home/belal/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/belal/.buildozer/android/platform/android-sdk-20
+# Android NDK is missing, downloading
+# Downloading http://dl.google.com/android/ndk/android-ndk-r9c-linux-x86_64.tar.bz2
+^CTraceback (most recent call last):
+  File "/usr/local/bin/buildozer", line 9, in <module>
+    load_entry_point('buildozer', 'console_scripts', 'buildozer')()
+  File "/home/belal/buildozer/buildozer/scripts/client.py", line 13, in main
+    Buildozer().run_command(sys.argv[1:])
+  File "/home/belal/buildozer/buildozer/__init__.py", line 1058, in run_command
+    self.target.run_commands(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 92, in run_commands
+    func(args)
+  File "/home/belal/buildozer/buildozer/target.py", line 102, in cmd_debug
+    self.buildozer.prepare_for_build()
+  File "/home/belal/buildozer/buildozer/__init__.py", line 176, in prepare_for_build
+    self.target.install_platform()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 469, in install_platform
+    self._install_android_ndk()
+  File "/home/belal/buildozer/buildozer/targets/android.py", line 312, in _install_android_ndk
+    cwd=self.buildozer.global_platform_dir)
+  File "/home/belal/buildozer/buildozer/__init__.py", line 686, in download
+    urlretrieve(url, filename, report_hook)
+  File "/usr/lib/python3.5/urllib/request.py", line 1760, in retrieve
+    block = fp.read(bs)
+  File "/usr/lib/python3.5/tempfile.py", line 622, in func_wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.5/http/client.py", line 448, in read
+    n = self.readinto(b)
+  File "/usr/lib/python3.5/http/client.py", line 488, in readinto
+    n = self.fp.readinto(b)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+belal@belal-ubuntu-16:~/Desktop/app$ 
+
